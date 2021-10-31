@@ -35,20 +35,260 @@
     <ul id="ul2">
       
 
-        <li><a class="hov link1" href="#">Symptoms</a></li>
-        <li><a class="hov"href="#.asp">Images</a></li>
-        <li><a class="hov"href="#.asp">Problems</a></li>
-        <li><a class="hov"href="#.asp">Health Data</a></li>
-        <li><a class="hov"href="#.asp">Other Information</a></li>
+        <li><button onclick="partOne()" id="bttone" class="hov link1">Symptoms</button></li>
+        <li><button onclick="partTwo()" id="btttwo" class="hov">Images</button></li>
+        <li><button  onclick="partThree()" id="bttthree" class="hov">Problems</button></li>
+        <li><button onclick="partFour()" id="bttfour" class="hov">Health Data</button></li>
+        <li><button onclick="partFive()" id="bttfive" class="hov">Other Information</button></li>
  
 
 
     </span>
 </div>
+<div>
+    <form id='post-form' class='post-form' method='post'>
+
     <div id="inl">
-Are you
+
+    <h1 class="title4">SYMPTOMS OF THE PATIENT (If any)</h1>
+        <div class="form">
+        <label  class="label1 label" for="inp1">Enter your symptoms (if any)</label>
+        <textarea cols="30" rows="30" class="textbox" id="inp1" type="text" placeholder="Please be as concise and short as possible. Describe the issue if you wish to, but try to make common symptoms short and precise. Enter 'none' if you have no visible symptoms  "></textarea>
+    </div>
+<div id="alert1"class="alert">*Please fill this up</div>
+
+<div id="q2">
+<label  id="label2"class="label" for="yes_no_radio">Do the symptoms or your condition indicate emergency?</label>
+<input type="radio" class="radio" name="yes_no" checked><span class="radtext">Yes</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</input>
+<input type="radio"  class="radio" name="yes_no"><span class="radtext">No</span></input>
+</div>
+
+    </div>
+
+<div id="inl2">
+    <div>
+   <div class="title4"><h1>UPLOAD IMAGES</h1></div>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label id="fils" for='files'>Upload images of your medical condition if required. You are also free to add medical reports and lab testings.  Please refer to Health Data: </label>
+   &nbsp;&nbsp;  <input id='files' type='file' multiple/>
+        <output id='result' >
+    </div>
+
+    <div id="lastdiv">JustHealth</div>
+</div>
+
+<div id="inl3">
+    <div class="form">
+        <label  class="label1 label" id="re"for="inp4">Enter your Problems faced (if any)</label>
+        <textarea cols="30" rows="30" class="textbox" id="inp4" type="text" placeholder="This space is for you! Whatever issues it is that you face mentally or physically can be shared here. It may be an explanation of the symptoms or just some other problems you've been feeling lately. Please be sure only to include problems that the doctors or the psychologists can solve under their profession. Also make sure to keep it formal and respectful. The people at the other side are real doctors, and you having paid to get yourselves checked!"></textarea>
+
+    </div>
+    
+</div>
+
+
+<div id="inl4">
+
+    <h1 class="title4">HEALTH DATA (optional)</h1>        <div id="form">
+       <div> <p>Please upload your medical reports in the Image upload section if they indicate or get indicated to your particular condition and defines or plays a role in its happening. The medical reports are taken out from our database after a succesful doctor report.</p></div>
+       <br><br><br><br><br><br><div> <label  class=" label forup" for="inp5">Enter your Red Blood Cell Count (RBC Count)</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp5" type="text" placeholder=""></textarea>
+        <label  class=" label forup" for="inp9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Calcium Count</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp9" type="text" placeholder=""></textarea></div>
+    
     </div>
 
 
+    <br> <br><br><br><div> <label  class=" label forup" for="inp6">Enter your White Blood Cell Count(WBC Count)</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp6" type="text" placeholder=""></textarea>
+        <label  class=" label forup" for="inp10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Sodium Count</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp10" type="text" placeholder=""></textarea></div>
+   
+
+    <br> <br><br><br><div> <label  class=" label forup" for="inp6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Haemoglobin Count</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp6" type="text" placeholder=""></textarea>  <label  class=" label forup" for="inp11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Potassium Count</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp11" type="text" placeholder=""></textarea></div>
+
+    <br> <br><br><br><div> <label  class=" label forup" for="inp7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Hematocrit Count</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp7" type="text" placeholder=""></textarea> <label  class=" label forup" for="inp12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Bicarbonate Count</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp12" type="text" placeholder=""></textarea></div>
+    
+
+
+    <br> <br><br><br><div> <label  class=" label forup" for="inp8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Glucose Count(Sugar Count)</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp8" type="text" placeholder=""></textarea><label  class=" label forup" for="inp13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Chloride Count</label>
+        <textarea cols="10" rows="10" class="textbox" id="inp13" type="text" placeholder=""></textarea></div>
+   
+        <br> <br><br><br><div> <label  class=" label forup" for="inp14">Enter your Blood Urea Nitrogen Count(BUN Count)</label>
+            <textarea cols="10" rows="10" class="textbox" id="inp14" type="text" placeholder=""></textarea><label  class=" label forup" for="inp15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your Troponin Count</label>
+            <textarea cols="10" rows="10" class="textbox" id="inp15" type="text" placeholder=""></textarea></div>
+
+<br><br>
+</div>
+
+
+<div id="inl5">
+    <label  class="label1 label" id="last"for="inp100"><span id="uup">Enter any other information</span>  </label>
+    <textarea cols="30" rows="30" class="textbox" id="inp100" type="text" placeholder=" Enter any other information needed to be conveyed to the doctor. Open your mind...If you have any psychological problems your head is oing through, type that in! These are looked by psychologists and counsellors who can help you to be yourselves!"></textarea>
+ <button class="expo">Submit</button>
+</div>
+    </div>
+
+   
+</div>
+    </div>
+  
+
+
+    </div>
+
+</div>
+    </div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    window.onload = partOne() 
+
+function partOne(){
+    document.getElementById("bttone").classList.add("active");
+    document.getElementById("btttwo").classList.remove("active");
+    document.getElementById("bttthree").classList.remove("active");
+    document.getElementById("bttfour").classList.remove("active");
+    document.getElementById("bttfive").classList.remove("active");
+
+    document.getElementById ("inl2").style.display = "none";
+    document.getElementById ("inl3").style.display = "none";
+    document.getElementById ("inl4").style.display = "none";
+    document.getElementById ("inl").style.display = "block";
+
+    document.getElementById ("inl5").style.display = "none";
+
+
+
+
+
+}
+
+function partTwo(){
+    document.getElementById("btttwo").classList.add("active");
+    document.getElementById("bttone").classList.remove("active");
+    document.getElementById("bttthree").classList.remove("active");
+    document.getElementById("bttfour").classList.remove("active");
+    document.getElementById("bttfive").classList.remove("active");
+
+    document.getElementById ("inl2").style.display = "block";
+    document.getElementById ("inl3").style.display = "none";
+    document.getElementById ("inl4").style.display = "none";
+    document.getElementById ("inl").style.display = "none";
+
+
+    document.getElementById ("inl5").style.display = "none";
+
+
+}
+function partThree(){
+    document.getElementById("bttthree").classList.add("active");
+    document.getElementById("bttone").classList.remove("active");
+    document.getElementById("btttwo").classList.remove("active");
+    document.getElementById("bttfour").classList.remove("active");
+    document.getElementById("bttfive").classList.remove("active");
+
+    document.getElementById ("inl2").style.display = "none";
+    document.getElementById ("inl3").style.display = "block";
+    document.getElementById ("inl4").style.display = "none";
+    document.getElementById ("inl").style.display = "none";
+
+    document.getElementById ("inl5").style.display = "none";
+
+
+}
+function partFour(){
+    document.getElementById("bttfour").classList.add("active");
+    document.getElementById("bttone").classList.remove("active");
+    document.getElementById("btttwo").classList.remove("active");
+    document.getElementById("bttthree").classList.remove("active");
+    document.getElementById("bttfive").classList.remove("active");
+
+    document.getElementById ("inl2").style.display = "none";
+    document.getElementById ("inl3").style.display = "none";
+    document.getElementById ("inl4").style.display = "block";
+    document.getElementById ("inl").style.display = "none";
+
+    document.getElementById ("inl5").style.display = "none";
+
+
+
+}
+function partFive(){
+    document.getElementById("bttfive").classList.add("active");
+    document.getElementById("bttone").classList.remove("active");
+    document.getElementById("btttwo").classList.remove("active");
+    document.getElementById("bttthree").classList.remove("active");
+    document.getElementById("bttfour").classList.remove("active");
+    
+    document.getElementById ("inl2").style.display = "none";
+    document.getElementById ("inl3").style.display = "none";
+    document.getElementById ("inl4").style.display = "none";
+    document.getElementById ("inl").style.display = "none";
+    document.getElementById ("inl5").style.display = "block";
+
+}
+
+  
+
+    window.onload = function() {
+  //Check File API support
+  if (window.File && window.FileList && window.FileReader) {
+    var filesInput = document.getElementById("files");
+    filesInput.addEventListener("change", function(event) {
+      var files = event.target.files; //FileList object
+      var output = document.getElementById("result");
+      for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+        //Only pics
+        var picReader = new FileReader();
+        picReader.addEventListener("load", function(event) {
+          var picFile = event.target;
+          var div = document.createElement("div");
+          div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" +
+            "title='" + picFile.name + "'/>";
+          output.insertBefore(div, null);
+        });
+        //Read the image
+        picReader.readAsDataURL(file);
+      }
+    });
+  } else {
+    console.log("Your browser does not support File API");
+  }
+}
+
+</script>
 </body>
 </html>
